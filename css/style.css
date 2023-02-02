@@ -1,0 +1,62 @@
+/*********************Généralités*************************/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+header,
+footer {
+  background-color: darkred;
+  padding: 30px 0 30px 20px;
+  text-align: center;
+}
+main {
+  text-align: center;
+  color: darkred;
+}
+article {
+  background-color: lightgray;
+  border: solid 2px darkred;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+#name {
+  text-transform: capitalize;
+}
+/*********************Liens*************************/
+.entete {
+  text-decoration: none;
+  color: lightgray;
+}
+main a {
+  text-decoration: none;
+  font-style: italic;
+  font-weight: bold;
+  color: darkred;
+}
+/*********************Images*************************/
+article img {
+  height: 150px;
+}
+footer img {
+  margin-right: 25px;
+}
+/*********************Média query*************************/
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .flex article {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .flex article {
+    width: 30%;
+  }
+}
